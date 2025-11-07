@@ -72,11 +72,31 @@ A full-stack web application built with AWS Amplify featuring:
 
 ## Architecture
 
+![Architecture Diagram](./images/architecture.png)
+
+### System Flow
+```
+Users → AWS Amplify → AWS Lambda → AWS AppSync → GraphQL → Amazon DynamoDB
+                ↓
+         Amazon Cognito
+```
+
+### Components Overview
+
+| Component | Purpose | Technology |
+|-----------|---------|------------|
+| **Frontend** | User Interface | React 18 + Amplify UI |
+| **Authentication** | User Management | Amazon Cognito |
+| **API Gateway** | GraphQL Endpoint | AWS AppSync |
+| **Serverless Functions** | Business Logic | AWS Lambda |
+| **Database** | Data Storage | Amazon DynamoDB |
+| **Hosting** | Web Hosting | AWS Amplify Hosting |
+
 ### Frontend
 - **React 18** with functional components and hooks
 - **AWS Amplify UI** for authentication components
 - **Error Boundary** for robust error handling
-- **CSS-in-JS** styling for components
+- **Modern CSS** with glassmorphism styling
 
 ### Backend
 - **AWS Cognito** User Pools for authentication
