@@ -72,14 +72,7 @@ A full-stack web application built with AWS Amplify featuring:
 
 ## Architecture
 
-![Architecture Diagram](./images/architecture.png)
-
-### System Flow
-```
-Users → AWS Amplify → AWS Lambda → AWS AppSync → GraphQL → Amazon DynamoDB
-                ↓
-         Amazon Cognito
-```
+![Architecture Diagram](./images/Architecture.png)
 
 ### Components Overview
 
